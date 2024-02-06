@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feev fc</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('bolaaa.jpg');
+  min-height: 100%;
+
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">SQUAD</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="https://www.instagram.com/feevskut?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="w3-bar-item w3-button">INSTAGRAM</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container " id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge"></span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-orange" style="font-size:100px" >FEEV </span>
+    <span class="w3-text-white w3-hide-small" style="font-size:100px" >Challenge Form</span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-orange">challenge feev!</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo w3-text-orange" style="margin-bottom:64px">SQUAD LIST</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Full Squad</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Line up</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Challenge Form</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1 class="w3-text-black"><b>Center Forward</b> 
+      <p class="w3-text-orange">Ivan<br>Dama<br>Farrel<br>Dandy<br></p>
+      <hr>
+   
+      <h1 class="w3-text-black"><b>Midfielder</b> 
+      <p class="w3-text-orange">Braven<br>Rizal<br>Gilang<br></p>
+      <hr>
+      
+      
+      <h1 class="w3-text-black"><b>Center Back</b> 
+        <p class="w3-text-orange">Nopal<br>Rooja<br>Dika<br></p>
+        <hr>
+
+        <h1 class="w3-text-black"><b>Goalkeeper</b> 
+            <p class="w3-text-orange">Acid<br>Ammar</p>
+            <hr> 
+
+      
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1 class="w3-center"><b>FEEV Line Up</b> 
+      <br>
+      <br>
+
+      <img src="bola2.jpg">
+      <br>
+      <br>
+   
+      <h1><b>Subtitues</b> 
+      <p class="w3-text-orange">Naufal<br>Ivan<br>Dandy<br></p>
+      
+      
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1 class="w3-center"><b>Challenge Form</b></h1><br>
+     
+      <form>
+      <p> 
+        <label>Isi Email :</label>     
+        <input type="email" name="name" placeholder="Your Email.."/>
+        </p>
+    
+    <p> 
+    <label>Isi Nama :</label>     
+    <input type="text" name="name" placeholder="your name.."/>
+    </p>
+    <p> 
+    <label>No Telp :</label>     
+    <input type="text" name="name" placeholder="No.Telepon.."/>
+    </p>
+
+    <p> 
+        <label>Tanggal Main (sesuai persetujuan) :</label>     
+        <input type="datetime-local" placeholder="Isi Request Tanggal.."/>
+        </p>
+
+        <p>   
+            <input type="submit" name="submit" value="Submit!"/>
+            </p>
+    
+
+    </form>    
+
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-orange  w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>anjing</p>
+    
+   
+    
+   
+        <p class="w3-center"></p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
